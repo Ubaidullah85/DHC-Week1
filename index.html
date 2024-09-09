@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Personal Portfolio Website</title>
+</head>
+<body>
+  <header class="Header">
+    <nav class="Navbar">
+      <h1>UbaidUllah.</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h1>Contact Me</h1>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <button type="submit" id="submitBtn">Submit</button>
+      </form>
+    </section>
+    
+    <!-- ---------HERO------------>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="highlight">UbaidUllah</span></h1>
+          <p>A Frontend Developer passionate about creating intuitive and visually appealing web experiences.</p>
+        </div>
+        <div class="hero-image">
+          <img src="Hero.svg" alt="Developer at work">
+        </div>
+      </div>
+    </section>
+    
+    <hr id="lines">
+    
+    <!-- ----------ABOUT---------- -->
+    <section id="about" class="About">
+      <div class="Container">
+        <div class="Row">
+          <div class="aboutc1"><img src="My.jpg" alt=""></div>
+          <div class="aboutc2">
+            <h1>About Me</h1>
+            <p class="para">Hi, I’m Ubaid, a passionate frontend developer dedicated to crafting visually appealing and user-friendly web experiences. With a strong foundation in HTML, CSS, and JavaScript, I thrive on turning designs into responsive, functional websites. I’m continually learning and growing in the field, driven by a love for problem-solving and creating seamless user interfaces.</p>
+            <div class="subtitles">
+              <p class="links active" onclick="opentab('education')">Education</p>
+              <p class="links" onclick="opentab('skill')">Skills</p>
+              <p class="links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="content activetab" id="education">
+              <ul>
+                <li><span>Persuading</span><br>Bachelor in Software Eng.</li>
+                <li><span>Intermediate</span><br>2022-2024 (I.C.S Phy)</li>
+                <li><span>Matric</span><br>2020-2022 (Comp Science)</li>
+              </ul>
+            </div>
+            <div class="content" id="skill">
+              <ul>
+                <li><span>Frontend Developer</span><br>HTML, CSS, React, Bootstrap.</li>
+                <li><span>Communication</span><br>I have Good and Confident Communication Skills.</li>
+                <li><span>TeamWork</span><br>I handle Teamwork easily and do my best in Teamwork</li>
+              </ul>
+            </div>
+            <div class="content" id="experience">
+              <ul>
+                <li><span>Intermediate lvl.</span><br>I have a year of experience in the Tech Industry</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <hr id="line">   
+    <!-- <---------Project Section----------> 
+    <section id="projects">
+      <div class="projectheading"><h1>Projects</h1></div>
+      <div class="projects-section">
+        <div class="card">
+          <img src="HTML CSS.png" alt="HTML/CSS Project">
+          <h3>HTML/CSS Design</h3>
+          <p>Responsive web design using HTML & CSS.</p>
+          <button>View Project</button>
+        </div>
+        <div class="card">
+          <img src="Js.png" alt="JavaScript Calculator">
+          <h3>JavaScript Calculator</h3>
+          <p>Simple calculator built with JS.</p>
+          <button>View Project</button>
+        </div>
+        <div class="card">
+          <img src="react.png" alt="React Project">
+          <h3>React To-Do App</h3>
+          <p>A to-do app built with React.</p>
+          <button>View Project</button>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-icons">
+        <a href="https://wa.me/+923288070085" target="_blank" class="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://linkedin.com/in/ubaidullah-tariq-026a51308" target="_blank" class="linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Ubaidullah85/DHC-Week1.git" target="_blank" class="github">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p>&copy; 2024 UbaidUllah. All rights reserved.</p>
+    </footer>
+  </header>
+  
+  <script src="script.js"></script>
+</body>
+</html>
